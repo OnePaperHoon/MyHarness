@@ -13,9 +13,12 @@
 ```
 MyHarness/
 ├── .claude/
-│   ├── rules/          # AI 행동 지침
+│   ├── commands/       # 슬래시 커맨드 (/review, /init, /commit)
+│   ├── agents/         # 서브에이전트 정의 (code-reviewer, security-auditor, test-writer)
+│   ├── skills/         # 재사용 작업 지침 (refactor, new-feature, debug, karpathy-guidelines)
+│   ├── rules/          # AI 행동 지침 (system, coding, security)
 │   ├── tools/          # 커스텀 스크립트
-│   ├── docs/           # 프로젝트 기술 문서
+│   ├── docs/           # 프로젝트 기술 문서 및 라이브러리 레퍼런스
 │   └── settings.json   # 권한 및 훅 설정
 ├── CLAUDE.md           # 이 파일
 └── memory/             # 대화 간 메모리 저장소
